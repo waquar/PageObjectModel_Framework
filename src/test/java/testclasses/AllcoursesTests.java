@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pageclasses.Allcourses;
+import pageclasses.NavigationBar;
 import pageclasses.LoginPage;
 import pageclasses.ResultsPage;
 import pageclasses.SearchbarPage;
@@ -30,15 +30,12 @@ public class AllcoursesTests {
     public  void searchCourse(){
         LoginPage login = new LoginPage(driver);
         login.log_in();
-        login.signin_testdata("test@email.com", "abcabc");
-
-        Allcourses allcourses = new Allcourses(driver);
-        allcourses.open();
+        NavigationBar navbar = login.signin_testdata("test@email.com", "abcabc");
+        navbar.mycourses();
 
         SearchbarPage searchbar = new SearchbarPage(driver);
-        searchbar.courses("restapi");
+        ResultsPage resultpage  = searchbar.courses("restapi");
 
-        ResultsPage resultpage  = new ResultsPage(driver);
         boolean searchresult = resultpage.verifySearchitems();
         Assert.assertTrue(searchresult);
     }

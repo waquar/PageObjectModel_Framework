@@ -20,7 +20,10 @@ public void log_in(){
     driver.findElement(By.xpath(login_link)).click();
 }
 
-public void signin_testdata(String passemail, String passkey){
+
+//returning object of navigation bar since it is a result
+//of  action of login page, that is pageobject theory.
+public NavigationBar signin_testdata(String passemail, String passkey){
     WebElement email = driver.findElement(By.xpath(username));
     email.clear();
     email.sendKeys(passemail);
@@ -31,6 +34,9 @@ public void signin_testdata(String passemail, String passkey){
 
     WebElement clicksubmit = driver.findElement(By.xpath(submitlogin));
     clicksubmit.click();
+
+    return  new NavigationBar(driver);
+
 }
 
 }

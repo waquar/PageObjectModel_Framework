@@ -11,14 +11,16 @@ public class SearchbarPage {
 
     WebDriver driver;
     public String searchcourse = "//input[@id='search-courses']";
-    public String clicksearchicon =  "//button[@id='search-course-button']";
+    //public String clicksearchicon =  "//button[@id='search-course-button']";
 
-    public void courses(String course){
+    public ResultsPage courses(String course){
         WebElement coursename = driver.findElement(By.xpath(searchcourse));
         coursename.clear();
         coursename.sendKeys(course);
-         WebElement submitclick = driver.findElement(By.xpath(clicksearchicon));
-         submitclick.click();
+        return  new ResultsPage(driver);
+
+         //WebElement submitclick = driver.findElement(By.xpath(clicksearchicon));
+         //submitclick.click();
     }
 
 }
