@@ -6,10 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pageclasses.NavigationBar;
-import pageclasses.LoginPage;
-import pageclasses.ResultsPage;
-import pageclasses.SearchbarPage;
+import pageclasses.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -38,6 +35,20 @@ public class AllcoursesTests {
 
         boolean searchresult = resultpage.verifySearchitems();
         Assert.assertTrue(searchresult);
+    }
+
+    @Test(dependsOnMethods = "searchCourse")
+    public void filterthecategory(){
+        NavigationBar navbar = new NavigationBar(driver);
+        navbar.allcourses();
+
+        Category_Filter catfilter = new Category_Filter(driver);
+        ResultsPage result =  catfilter.selectdropdown("Software IT");
+
+        int count = catfilter.findcourses_count("Software IT");
+        boolean filterresult = result.verifySearchitems();
+        Assert.assertTrue(filterresult);
+
     }
 
     @AfterClass
