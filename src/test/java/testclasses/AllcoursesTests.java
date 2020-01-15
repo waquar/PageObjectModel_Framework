@@ -13,6 +13,11 @@ import java.util.concurrent.TimeUnit;
 public class AllcoursesTests {
     WebDriver driver;
     String baseurl = "https://learn.letskodeit.com/";
+    LoginPage login;
+    NavigationBar navbar;
+    SearchbarPage searchbar;
+    ResultsPage resultpage;
+    Category_Filter catfilter;
 
     @BeforeClass
     public void setUp(){
@@ -21,34 +26,29 @@ public class AllcoursesTests {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         driver.get(baseurl);
+        login = new LoginPage(driver);
+        login.log_in();
     }
 
     @Test
     public  void searchCourse(){
-        LoginPage login = new LoginPage(driver);
-        login.log_in();
-        NavigationBar navbar = login.signin_testdata("test@email.com", "abcabc");
+        navbar = login.signin_testdata("test@email.com", "abcabc");
         navbar.mycourses();
-
-        SearchbarPage searchbar = new SearchbarPage(driver);
-        ResultsPage resultpage  = searchbar.courses("restapi");
-
+        searchbar = new SearchbarPage(driver);
+        resultpage  = searchbar.courses("restapi");
         boolean searchresult = resultpage.verifySearchitems();
         Assert.assertTrue(searchresult);
     }
 
-    @Test(dependsOnMethods = "searchCourse")
+    @Test
     public void filterthecategory(){
-        NavigationBar navbar = new NavigationBar(driver);
+        navbar = new NavigationBar(driver);
         navbar.allcourses();
-
-        Category_Filter catfilter = new Category_Filter(driver);
-        ResultsPage result =  catfilter.selectdropdown("Software IT");
-
+        catfilter = new Category_Filter(driver);
+        resultpage =  catfilter.selectdropdown("Software IT");
         int count = catfilter.findcourses_count("Software IT");
-        boolean filterresult = result.verifySearchitems();
+        boolean filterresult = resultpage.verifySearchitems();
         Assert.assertTrue(filterresult);
-
     }
 
     @AfterClass

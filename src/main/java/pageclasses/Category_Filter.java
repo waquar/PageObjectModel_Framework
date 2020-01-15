@@ -11,37 +11,37 @@ public class Category_Filter {
         this.driver = driver;
     }
     public WebDriver driver;
-    private String Category_Dropdown = "(//div[contains(@class, 'course-filter')])[1]//button";
-    private String Category_Option = "//a[@href='/courses/category/Software IT']";
+    private String Category_Dropdown_xpath = "(//div[contains(@class, 'course-filter')])[1]//button";
+    private String Category_Option_xpath = "//a[@href='/courses/category/Software IT']";
+
+    //for clicking on category dropdown
+    public void clicking_on_categorydropdown(){
+        WebElement dropdown = driver.findElement(By.xpath(Category_Dropdown_xpath));
+        dropdown.click();
+    }
+
+    // for explicitly wait to appear the drop down
+    public WebElement categoryDropdown(String category_name){
+        clicking_on_categorydropdown();
+        WebDriverWait wait = new WebDriverWait(driver, 4);
+        WebElement Category_Options =  wait.until(ExpectedConditions.elementToBeClickable
+                (By.xpath(String.format(Category_Option_xpath, category_name))));
+        return  Category_Options;
+    }
 
     public ResultsPage selectdropdown(String category_name){
-        WebElement dropdown = driver.findElement(By.xpath(Category_Dropdown));
-        dropdown.click();
-        //Explicitlywait
-        WebDriverWait wait = new WebDriverWait(driver, 4);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(Category_Option, category_name)))).click();
+        WebElement Category_Options = categoryDropdown(Category_Dropdown_xpath);
+        Category_Options.click();
         return  new ResultsPage(driver);
-
     }
     public int findcourses_count(String cateogary_name){
-        WebElement dropdown = driver.findElement(By.xpath(Category_Dropdown));
-        dropdown.click();
-        WebDriverWait wait = new WebDriverWait(driver, 4);
-        WebElement category_Option = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath(String.format(Category_Option, cateogary_name))));
-
-        // getting integer value of options using split
-        String category_text = category_Option.getText();
+        WebElement Category_count = categoryDropdown(Category_Option_xpath);
+        String category_text = Category_count.getText();                                // getting integer value of options using split
         String [] arraytemp = category_text.split("\\(");
         String coursecount = arraytemp[1].split("\\)")[0];
-
         int final_coursecount = Integer.parseInt(coursecount);
-        //closing dropdown
-        dropdown.click();
+        clicking_on_categorydropdown();                                                           //closing the opened dropdown
         return  final_coursecount;
-
     }
-
-
 
 }
