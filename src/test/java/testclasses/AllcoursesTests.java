@@ -7,7 +7,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageclasses.*;
-
 import java.util.concurrent.TimeUnit;
 
 public class AllcoursesTests {
@@ -26,8 +25,8 @@ public class AllcoursesTests {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         driver.get(baseurl);
-        login = new LoginPage(driver);
-        login.log_in();
+        navbar = new NavigationBar(driver);
+        navbar.log_in();
     }
 
     @Test
@@ -42,12 +41,11 @@ public class AllcoursesTests {
 
     @Test
     public void filterthecategory(){
-        navbar = new NavigationBar(driver);
         navbar.allcourses();
         catfilter = new Category_Filter(driver);
         resultpage =  catfilter.selectdropdown("Software IT");
         int count = catfilter.findcourses_count("Software IT");
-        boolean filterresult = resultpage.verifySearchitems();
+        boolean filterresult = resultpage.verifyFilterCourseCount(count);
         Assert.assertTrue(filterresult);
     }
 

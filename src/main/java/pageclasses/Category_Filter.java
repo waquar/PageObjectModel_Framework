@@ -6,13 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class Category_Filter {
     public Category_Filter(WebDriver driver){
         this.driver = driver;
     }
     public WebDriver driver;
     private String Category_Dropdown_xpath = "(//div[contains(@class, 'course-filter')])[1]//button";
-    private String Category_Option_xpath = "//a[@href='/courses/category/Software IT']";
+    private String Category_Option_xpath = "//a[@href='/courses/category/%s']";
 
     //for clicking on category dropdown
     public void clicking_on_categorydropdown(){
@@ -35,6 +37,21 @@ public class Category_Filter {
         return  new ResultsPage(driver);
     }
     public int findcourses_count(String cateogary_name){
+
+       /*
+       WebElement dropdown = driver.findElement(By.className("dropdown-menu"));
+        List<WebElement> menuItems = dropdown.findElements(By.tagName("a"));
+        for(WebElement menuItem: menuItems){
+            if(menuItem.getText().startsWith(cateogary_name)){
+                String [] arraytemp = menuItem.getText().split("\\(");
+                String coursecount = arraytemp[1].split("\\)")[0];
+                int final_coursecount = Integer.parseInt(coursecount);
+
+                break;
+            }
+        }
+        */
+
         WebElement Category_count = categoryDropdown(Category_Option_xpath);
         String category_text = Category_count.getText();                                // getting integer value of options using split
         String [] arraytemp = category_text.split("\\(");

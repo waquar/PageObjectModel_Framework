@@ -29,7 +29,9 @@ public class ResultsPage {
         }
         result = isOpen() & verifySearchitems();
         return  result;
-
     }
 
+    public boolean verifyFilterCourseCount(int expectedCount) {
+        return courseCount() == expectedCount;
+    }
 }
