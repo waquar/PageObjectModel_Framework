@@ -1,5 +1,6 @@
 package pageclasses;
 
+import Basemain.Basemain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,8 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class Category_Filter {
+public class Category_Filter extends Basemain {
     public Category_Filter(WebDriver driver){
+        super(driver);
         this.driver = driver;
     }
     public WebDriver driver;

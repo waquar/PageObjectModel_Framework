@@ -1,11 +1,13 @@
 package pageclasses;
 
+import Basemain.Basemain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class SearchbarPage {
+public class SearchbarPage extends Basemain {
     public SearchbarPage(WebDriver driver){
+        super(driver);
         this.driver = driver;
     }
 

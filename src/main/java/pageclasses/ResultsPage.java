@@ -1,11 +1,13 @@
 package pageclasses;
+import Basemain.Basemain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
-public class ResultsPage {
+public class ResultsPage extends Basemain {
     public ResultsPage(WebDriver driver){
+        super(driver);
         this.driver = driver;
     }
 

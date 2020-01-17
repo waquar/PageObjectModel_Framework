@@ -1,31 +1,19 @@
 package testclasses;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import Basetest.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pageclasses.*;
 
-import java.util.concurrent.TimeUnit;
-
-public class Login_Tests {
-    WebDriver driver;
-    String baseurl = "https://learn.letskodeit.com/";
-    LoginPage login;
-    NavigationBar navbar;
+public class Login_Tests extends BaseClass {
 
     @BeforeClass
     public void setUp(){
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-        driver.get(baseurl);
-        navbar = new NavigationBar(driver);
-        navbar.log_in();
+
     }
+
     @AfterMethod
     public void afterthemethod(){
         if(navbar.checkUserlogin_status()){
