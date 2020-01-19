@@ -39,6 +39,5 @@ public class AllcoursesTests extends BaseClass {
     public void tearDown(){
         driver.quit();
     }
-
 }
 

@@ -1,6 +1,7 @@
 package pageclasses;
 
 import Basemain.Basemain;
+import Utilities.Util;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,6 +42,12 @@ public class NavigationBar extends Basemain {
             e.printStackTrace();
             return  false;
         }
+    }
+    public boolean verifytheheader(){
+        WebElement link = driver.findElement(By.xpath(Mycourses_link));
+        String application_text = link.getText();
+        return Util.verifyTextMatch(application_text, "My Courses");
+
     }
 
     public  void logout(){

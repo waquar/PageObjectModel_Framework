@@ -31,8 +31,11 @@ public class Util {
     public static String getRandomstring(int length){
         StringBuilder stringBuilder = new StringBuilder();
         String characters = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghjklmnopqrstuvwxyz0123456789";
+
         for (int i = 0; i <length; i++){
             int index = (int)(Math.random() * characters.length());
+            System.out.println((Math.random() * characters.length()));
+            System.out.println(index);
             stringBuilder.append(characters.charAt(index));
         }
         return  stringBuilder.toString();
@@ -187,6 +190,13 @@ public class Util {
     public static boolean isListAscendingOrder(List<Long> list){
         boolean sorted = Ordering.natural().isOrdered(list);
         return sorted;
+    }
+    public static String getScreenshotName(String methodname , String Browsername){
+        String localdatetime = getCurrentDateTime();
+        StringBuilder name =    new StringBuilder().append(Browsername).append("-")
+                .append(methodname).append("-").
+                        append(localdatetime).append(".png");
+        return  name.toString();
     }
 }
 

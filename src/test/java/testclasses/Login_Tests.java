@@ -22,14 +22,20 @@ public class Login_Tests extends BaseClass {
         }
     }
 
-    @Test
+    @Test(enabled =  false)
     public  void testlogin_positive(){
         navbar = login.signin_testdata("test@email.com", "abcabc");
         boolean result = navbar.checkUserlogin_status();
         Assert.assertTrue(result);
     }
-
     @Test
+    public void testlogincheck(){
+        navbar = login.signin_testdata("test@email.com", "abcabc");
+        boolean checkstatusoflogin = navbar.verifytheheader();
+        Assert.assertTrue(checkstatusoflogin);
+    }
+
+    @Test(enabled = false)
     public void testlogin_negative(){
         navbar = login.signin_testdata("fail@email.com", "abcabc");
         boolean result = navbar.checkUserlogin_status();
