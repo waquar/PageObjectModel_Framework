@@ -1,6 +1,6 @@
 package pageclasses;
 
-import Basemain.Basemain;
+import Basemain_Package.Basemain;
 import Utilities.Util;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,27 +16,28 @@ public class NavigationBar extends Basemain {
     }
     WebDriver driver;
     public String url = "https://learn.letskodeit.com/courses";
-    public String Allcourses_link = "//a[@href='/courses']";
-    public String Mycourses_link = "//a[@href='/courses/enrolled']";
-    public String user_icon = "gravatar";
-    public String login_link = "//a[@href= '/sign_in']";
+    public String Allcourses_link = "xpath:>//a[@href='/courses']";
+    public String Mycourses_link = "xpath:>//a[@href='/courses/enrolled']";
+    public String user_icon = "class:>gravatar";
+    public String login_link = "xpath:>//a[@href= '/sign_in']";
+    public String logout_link = "linktext:>Log Out";
 
     public void allcourses(){
-        driver.findElement(By.xpath(Allcourses_link)).click();
+        getElement(Allcourses_link, "allcourses").click();
     }
     public void mycourses(){
-        driver.findElement(By.xpath(Mycourses_link)).click();
+        getElement(Mycourses_link, "Mycourses").click();
     }
 
     public LoginPage log_in() {
-        driver.findElement(By.xpath(login_link)).click();
+        getElement(login_link, "login");
         return  new LoginPage(driver);
     }
 
     public boolean checkUserlogin_status() {
         WebElement icon = null;
         try{
-            icon = driver.findElement(By.className(user_icon));
+            icon = getElement(user_icon, "icon image");
             return  true;
         }catch(Exception e){
             e.printStackTrace();
@@ -44,7 +45,7 @@ public class NavigationBar extends Basemain {
         }
     }
     public boolean verifytheheader(){
-        WebElement link = driver.findElement(By.xpath(Mycourses_link));
+        WebElement link = getElement(Mycourses_link, "my courses");
         String application_text = link.getText();
         return Util.verifyTextMatch(application_text, "My Courses");
 
@@ -53,9 +54,9 @@ public class NavigationBar extends Basemain {
     public  void logout(){
         WebDriverWait wait = new WebDriverWait(driver, 3);
         WebElement logout = wait.until(ExpectedConditions.elementToBeClickable(
-                driver.findElement(By.className(user_icon))));
+                getElement(user_icon,"image icon")));   //it will click on icon
         logout.click();
-        driver.findElement(By.linkText("Log Out"));
+        getElement(logout_link,"logout").click();
         driver.quit();
     }
     //public boolean openedurl(){

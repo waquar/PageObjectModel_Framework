@@ -1,5 +1,5 @@
 package pageclasses;
-import Basemain.Basemain;
+import Basemain_Package.Basemain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,14 +13,14 @@ public class ResultsPage extends Basemain {
 
     WebDriver driver;
     private String url = "?query=";
-    private String courses_list = "//div[@class='course-listing-title']";
+    private String courses_list = "xpath:>//div[@class='course-listing-title']";
 
     public boolean isOpen( ){
         return  driver.getCurrentUrl().contains(url);
     }
 
     public int courseCount( ){
-        List <WebElement> count_items = driver.findElements(By.xpath(courses_list));
+        List <WebElement> count_items = getElementList(courses_list, "items list");
         return  count_items.size();
 
     }

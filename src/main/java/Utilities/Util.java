@@ -196,6 +196,7 @@ public class Util {
         StringBuilder name =    new StringBuilder().append(Browsername).append("-")
                 .append(methodname).append("-").
                         append(localdatetime).append(".png");
+        System.out.println(name.toString());
         return  name.toString();
     }
 }

@@ -1,7 +1,7 @@
 package testclasses;
 
 
-import Basetest.BaseClass;
+import Basetest_Package.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;

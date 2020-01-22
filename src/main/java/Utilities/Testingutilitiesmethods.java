@@ -1,10 +1,19 @@
 package Utilities;
 
+
+
+import Basemain_Package.Basemain;
+import Basemain_Package.CustomDriver;
+
 import java.util.List;
 
 public class Testingutilitiesmethods {
     public static  void main(String[] args){
-        String s = Util.getRandomstring(7);
+        //String s = Util.getRandomstring(7);
+        CustomDriver cd = new CustomDriver();
+        cd.takeScreenshot("chrome", "test1");
+
+
         /*List<Integer> a = new List();
         a.add(56);
         a.add(58);*/
@@ -20,6 +29,6 @@ public class Testingutilitiesmethods {
         System.out.println(s3);
         System.out.println(s4);
         System.out.println(s5);*/
-        System.out.println(s);
+       // System.out.println(s);
     }
 }

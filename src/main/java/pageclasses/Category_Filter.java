@@ -1,13 +1,11 @@
 package pageclasses;
 
-import Basemain.Basemain;
+import Basemain_Package.Basemain;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.List;
 
 public class Category_Filter extends Basemain {
     public Category_Filter(WebDriver driver){
@@ -15,12 +13,12 @@ public class Category_Filter extends Basemain {
         this.driver = driver;
     }
     public WebDriver driver;
-    private String Category_Dropdown_xpath = "(//div[contains(@class, 'course-filter')])[1]//button";
+    private String Category_Dropdown_xpath = "(xpath:>//div[contains(@class, 'course-filter')])[1]//button";
     private String Category_Option_xpath = "//a[@href='/courses/category/%s']";
 
     //for clicking on category dropdown
     public void clicking_on_categorydropdown(){
-        WebElement dropdown = driver.findElement(By.xpath(Category_Dropdown_xpath));
+        WebElement dropdown = getElement(Category_Dropdown_xpath,"dropdown");
         dropdown.click();
     }
 
@@ -40,7 +38,7 @@ public class Category_Filter extends Basemain {
     }
     public int findcourses_count(String cateogary_name){
 
-       /*
+       /*     by bhai sahab
        WebElement dropdown = driver.findElement(By.className("dropdown-menu"));
         List<WebElement> menuItems = dropdown.findElements(By.tagName("a"));
         for(WebElement menuItem: menuItems){

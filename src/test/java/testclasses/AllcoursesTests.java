@@ -1,6 +1,6 @@
 package testclasses;
 
-import Basetest.BaseClass;
+import Basetest_Package.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -34,7 +34,6 @@ public class AllcoursesTests extends BaseClass {
         boolean filterresult = resultpage.verifyFilterCourseCount(count);
         Assert.assertTrue(filterresult);
     }
-
     @AfterClass
     public void tearDown(){
         driver.quit();
