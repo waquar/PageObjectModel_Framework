@@ -3,30 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e7ee494-f0fe-4c85-b79c-acbfd9c93120" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Basemain/Basemain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/Basemain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Basemain/CustomDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Testingutilitiesmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Testingutilitiesmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageclasses/Category_Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageclasses/Category_Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageclasses/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageclasses/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageclasses/NavigationBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageclasses/NavigationBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageclasses/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageclasses/ResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageclasses/SearchbarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageclasses/SearchbarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basetest/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basetest_Package/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testclasses/AllcoursesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testclasses/AllcoursesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testclasses/Login_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testclasses/Login_Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Basemain/Basemain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Testingutilitiesmethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Testingutilitiesmethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageclasses/Category_Filter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageclasses/Category_Filter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageclasses/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageclasses/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageclasses/NavigationBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageclasses/NavigationBar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageclasses/ResultsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageclasses/ResultsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageclasses/SearchbarPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageclasses/SearchbarPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Basetest/BaseClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/overview/login_letskodeit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/overview/login_letskodeit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testclasses/AllcoursesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testclasses/AllcoursesTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testclasses/Login_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testclasses/Login_Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Basetest_Package/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basetest_Package/WebDriverFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,30 +178,30 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="226" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.823@0.23.1440.823" timestamp="1578936201087" />
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1579672684993">
+    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1579680565534">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1578695852460" />
     <state width="1394" height="445" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1578946122782" />
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1579672684993" />
-    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1579672684992">
+    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1579680565534" />
+    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1579680565532">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1578695852458" />
     <state width="1394" height="445" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1578946122780" />
-    <state width="1398" height="329" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1579672684992" />
-    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1579672684991">
+    <state width="1398" height="329" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1579680565532" />
+    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1579680565531">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1578695852457" />
     <state width="1394" height="445" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1578946122778" />
-    <state width="1398" height="329" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1579672684991" />
-    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1579672684993">
+    <state width="1398" height="329" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1579680565531" />
+    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1579680565533">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1578695852459" />
     <state width="1394" height="445" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1578946122781" />
-    <state width="1398" height="329" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579672684993" />
+    <state width="1398" height="329" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579680565533" />
     <state width="1398" height="256" key="GridCell.Tab.1.bottom" timestamp="1579292463321">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -244,12 +222,12 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="324" y="78" key="Maven.ArtifactSearchDialog/0.23.1440.825@0.23.1440.825" timestamp="1579464766928" />
-    <state x="344" y="57" width="1006" height="722" key="SettingsEditor" timestamp="1579547691112">
+    <state x="344" y="57" width="1006" height="722" key="SettingsEditor" timestamp="1579710370264">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="154" y="23" width="1125" height="812" key="SettingsEditor/0.23.1440.812@0.23.1440.812" timestamp="1578679852870" />
     <state x="154" y="23" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1578925745863" />
-    <state x="344" y="57" width="1006" height="722" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1579547691112" />
+    <state x="344" y="57" width="1006" height="722" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1579710370264" />
     <state x="0" y="23" key="com.intellij.ide.util.TipDialog" timestamp="1579031750005">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
