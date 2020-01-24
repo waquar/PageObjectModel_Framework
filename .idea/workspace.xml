@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e7ee494-f0fe-4c85-b79c-acbfd9c93120" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Basemain_Package/Addon_Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/Addon_Drivers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Basetest_Package/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basetest_Package/WebDriverFactory.java" afterDir="false" />
     </list>

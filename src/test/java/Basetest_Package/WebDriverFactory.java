@@ -2,8 +2,12 @@ package Basetest_Package;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.CapabilityType;
 
 import java.util.concurrent.TimeUnit;
 
@@ -74,6 +78,43 @@ public class WebDriverFactory {
         System.out.println("Driver Binary :: " + driverPath);
         System.setProperty(driverKey, driverPath);
     }
+    //setting options capabilities, yet to implement in set driver
+    /***
+     * Set Chrome Options
+     * @return options
+     */
+    private ChromeOptions setChromeOptions() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-infobars");
+        return options;
+    }
+
+    /***
+     * Set Firefox Options
+     * @return options
+     */
+    private FirefoxOptions setFFOptions() {
+        FirefoxOptions options = new FirefoxOptions();
+        options.setCapability(CapabilityType.HAS_NATIVE_EVENTS, false);
+        return options;
+    }
+
+    /***
+     * Set Internet Explorer Options
+     * @return options
+     */
+    private InternetExplorerOptions setIEOptions() {
+        InternetExplorerOptions options = new InternetExplorerOptions();
+        options.setCapability(InternetExplorerDriver.NATIVE_EVENTS, false);
+        options.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
+        options.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, false);
+        options.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+        options.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+        options.setCapability(InternetExplorerDriver.
+                INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+        return options;
+    }
+
 
 
 }
