@@ -82,13 +82,7 @@ public class CustomDriver {
         }
         return  element;
     }
-    /***
-     *
-     * @param locator - locator strategy, id=>example, name=>example, css=>#example,
-     *      *                tag=>example, xpath=>//example, link=>example
-     * @param info - Information about element, usually text on element
-     * @return
-     */
+
     public List<WebElement> getElementList(String locator, String info) {
         List<WebElement> elementList = new ArrayList<WebElement>();
         By byType = getByType(locator);
@@ -101,13 +95,6 @@ public class CustomDriver {
         }
         return elementList;
     }
-
-    /***
-     * Check if element is present
-     * @param locator locator strategy, id=>example, name=>example, css=>#example,
-     *      *                tag=>example, xpath=>//example, link=>example
-     * @return boolean if element is present or not
-     */
 
     public WebElement waitForElement(String locator, int timeout) {
         By byType = getByType(locator);

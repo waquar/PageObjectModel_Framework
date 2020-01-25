@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basemain_Package/Addon_Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/Addon_Drivers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Basetest_Package/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Basetest_Package/WebDriverFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
