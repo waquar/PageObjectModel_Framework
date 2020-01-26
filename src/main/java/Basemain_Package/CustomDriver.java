@@ -62,7 +62,7 @@ public class CustomDriver {
             else if(locator_type.contains("xpath")){
                 by = By.xpath(locator);
             }else{
-                System.out.println("Givem locator is not valid : > " + locator);
+                System.out.println("Given locator is not valid : > " + locator);
             }
         }catch (Exception e){
             e.printStackTrace();
