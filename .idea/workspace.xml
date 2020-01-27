@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e7ee494-f0fe-4c85-b79c-acbfd9c93120" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basemain_Package/CustomDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,20 @@
       <recent name="pageclasses" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/waquaralam/Framework_POM/Regression_test.xml">
+  <component name="RunManager" selected="Application.Excel_Read">
+    <configuration name="Excel_Read" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.overview.Excel_Read" />
+      <module name="Framework_POM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.overview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Testingutilitiesmethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Utilities.Testingutilitiesmethods" />
       <module name="Framework_POM" />
@@ -71,24 +84,6 @@
       <option name="PACKAGE_NAME" value="testclasses" />
       <option name="MAIN_CLASS_NAME" value="testclasses.AllcoursesTests" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllcoursesTests.searchCourse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Framework_POM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testclasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testclasses" />
-      <option name="MAIN_CLASS_NAME" value="testclasses.AllcoursesTests" />
-      <option name="METHOD_NAME" value="searchCourse" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -124,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Excel_Read" />
         <item itemvalue="TestNG./Users/waquaralam/Framework_POM/Regression_test.xml" />
         <item itemvalue="Application.Testingutilitiesmethods" />
         <item itemvalue="TestNG.Login_Tests" />
         <item itemvalue="TestNG.AllcoursesTests" />
-        <item itemvalue="TestNG.AllcoursesTests.searchCourse" />
       </list>
     </recent_temporary>
   </component>
@@ -178,30 +173,30 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="226" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.823@0.23.1440.823" timestamp="1578936201087" />
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1579680565534">
+    <state width="1398" height="308" key="GridCell.Tab.0.bottom" timestamp="1580107877580">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1578695852460" />
     <state width="1394" height="445" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1578946122782" />
-    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1579680565534" />
-    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1579680565532">
+    <state width="1398" height="308" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1580107877580" />
+    <state width="1398" height="308" key="GridCell.Tab.0.center" timestamp="1580107877578">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1578695852458" />
     <state width="1394" height="445" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1578946122780" />
-    <state width="1398" height="329" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1579680565532" />
-    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1579680565531">
+    <state width="1398" height="308" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1580107877578" />
+    <state width="1398" height="308" key="GridCell.Tab.0.left" timestamp="1580107877578">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1578695852457" />
     <state width="1394" height="445" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1578946122778" />
-    <state width="1398" height="329" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1579680565531" />
-    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1579680565533">
+    <state width="1398" height="308" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1580107877578" />
+    <state width="1398" height="308" key="GridCell.Tab.0.right" timestamp="1580107877579">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1400" height="426" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1578695852459" />
     <state width="1394" height="445" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1578946122781" />
-    <state width="1398" height="329" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579680565533" />
+    <state width="1398" height="308" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1580107877579" />
     <state width="1398" height="256" key="GridCell.Tab.1.bottom" timestamp="1579292463321">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
